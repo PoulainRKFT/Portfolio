@@ -10,6 +10,37 @@
     box-sizing: border-box;
 }
 
+#error-message p {
+    font-size: 1.5em;
+    margin: 0 20px;
+}
+
+#error-message a {
+    color: aqua;
+    font-size: 1.5em;
+    margin: 0 20px;
+}
+
+.hidden {
+    transform: scale(0);
+}
+
+#error-message {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    z-index: 1000;
+}
+
 .header {
     position: fixed;
     top: 0;
@@ -74,7 +105,7 @@ li {
 }
 
 #background p, #background h2, #background h3, #background li {
-    color: #21164B;
+    color: #0f3315;
 }
 
 body {
@@ -84,7 +115,7 @@ body {
 }
 
 #background {
-    background-color: #21164B;
+    background-color: #0f3315;
     background-image: url(../assets/ImmersiveFashionShow/background.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -243,9 +274,9 @@ body {
 
 .parallax-wrap a:hover {
     background-color: #ffffff;
-    color: #27184B;
+    color: #0f3315;
 }
 
 .footer a:hover {
-    color: #27184B;
+    color: #0f3315;
 }

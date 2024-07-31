@@ -1,4 +1,5 @@
-document.addEventListener("mousemove", parallax); 
+document.addEventListener("mousemove", parallax);
+
 function parallax(event) {
   this.querySelectorAll(".parallax").forEach((shift) => {
     const position = shift.getAttribute("value");
@@ -8,3 +9,14 @@ function parallax(event) {
     shift.style.transform = `translateX(${x}px) translateY(${y}px)`;
   });
 }
+
+function checkWindowSize() {
+  if (window.innerWidth <= 1300) {
+    document.getElementById('error-message').classList.remove('hidden');
+  } else {
+    document.getElementById('error-message').classList.add('hidden');
+  }
+}
+
+window.addEventListener('load', checkWindowSize);
+window.addEventListener('resize', checkWindowSize);
